@@ -2,7 +2,7 @@
 // components/YouTubeBackground.js
 import { useEffect, useRef, useState } from 'react';
 
-const YouTubeBackground = ({ videoId }) => {
+const YouTubeBackground = ({ videoId } : {videoId:string}) => {
     const videoRef = useRef(null);
     const [timeLeft, setTimeLeft] = useState<number>(186400);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
