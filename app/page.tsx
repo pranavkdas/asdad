@@ -1,4 +1,3 @@
-import Image from "next/image";
 import YouTubeBackground from './youtubeBackground';
 import Navbar from "./navbar";
 
