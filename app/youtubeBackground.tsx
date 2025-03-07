@@ -1,13 +1,10 @@
 "use client"
 // components/YouTubeBackground.js
 import { useEffect, useRef, useState } from 'react';
-import Countdown from './countdownClock';
 
 const YouTubeBackground = ({ videoId }) => {
     const videoRef = useRef(null);
     const [timeLeft, setTimeLeft] = useState<number>(186400);
-    const [isActive, setIsActive] = useState<boolean>(false);
-    const [isPaused, setIsPaused] = useState<boolean>(false);
     const timerRef = useRef<NodeJS.Timeout | null>(null);
 
     useEffect(() => {
